@@ -23,7 +23,7 @@ public class SeleniumTest {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[normalize-space()='Accept all']"))).click();
 
-        Assert.assertEquals(driver.getTitle(),"Ggle", "Strings aren`t matching");
+        Assert.assertEquals(driver.getTitle(),"Google", "Strings aren`t matching");
 
         driver.quit();
     }
